@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Analysis Results - CDSS</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Analysis Results</h1>
+        <div class="result-box">
+            <h2>Diagnosis: {{ diagnosis }}</h2>
+            <p><strong>Recommendation:</strong> {{ recommendation }}</p>
+        </div>
+        <div class="actions">
+            <a href="/" class="back-button">← Analyze Another Test</a>
+        </div>
+    </div>
+</body>
+</html>

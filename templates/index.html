@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Analyzing CDSS</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Analyzing CDSS</h1>
+        <div class="info">
+            Enter your test results below for diabetes diagnosis. <br>
+            <b>Note:</b> Based on WHO/ADA diagnostic criteria. Enter any test results you have - the system will analyze all available data.
+        </div>
+        <form id="diabetes-form" action="/result" method="POST">
+            <label>Fasting Plasma Glucose (FPG) - mg/dL (after 8 hours fasting):
+                <input type="number" name="fpg" min="50" max="400" placeholder="e.g. 90">
+            </label>
+            <label>HbA1c Test - %:
+                <input type="number" name="hba1c" step="0.1" min="3" max="15" placeholder="e.g. 5.2">
+            </label>
+            <label>Oral Glucose Tolerance Test (OGTT) 2-Hour - mg/dL:
+                <input type="number" name="ogtt" min="50" max="400" placeholder="e.g. 110">
+            </label>
+            <label>Random Blood Sugar - mg/dL:
+                <input type="number" name="random_bs" min="50" max="400" placeholder="e.g. 120 ">
+            </label>
+            <label>Symptoms Present (for Random BS):
+                <select name="symptoms">
+                    <option value="">Select</option>
+                    <option value="yes">Yes (Frequent urination, thirst, fatigue, etc.)</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+            <label>Age (years):
+                <input type="number" name="age" min="1" max="120" placeholder="e.g. 35">
+            </label>
+            <label>Family History of Diabetes:
+                <select name="family_history">
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+            <button type="submit">Analyze</button>
+        </form>
+    </div>
+</body>
+</html>

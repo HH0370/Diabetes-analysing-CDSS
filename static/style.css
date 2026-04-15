@@ -1,0 +1,115 @@
+body {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	min-height: 100vh;
+	margin: 0;
+	background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container {
+	max-width: 420px;
+	margin: 40px auto;
+	background: rgba(255,255,255,0.95);
+	padding: 2.5em 2em 2em 2em;
+	border-radius: 18px;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+	border: 1px solid #e0e0e0;
+}
+h1 {
+	text-align: center;
+	color: #1a2980;
+	margin-bottom: 1.2em;
+	letter-spacing: 0.5px;
+}
+form label {
+	display: block;
+	margin: 1.1em 0 0.5em;
+	color: #333;
+	font-weight: 500;
+}
+input {
+	width: 100%;
+	padding: 0.7em;
+	margin-bottom: 1em;
+	border: 1px solid #b2bec3;
+	border-radius: 6px;
+	font-size: 1em;
+	background: #f8fafc;
+	transition: border 0.2s;
+}
+input:focus {
+	border: 1.5px solid #66a6ff;
+	outline: none;
+}
+button {
+	width: 100%;
+	padding: 0.9em;
+	background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	font-size: 1.1em;
+	font-weight: 600;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(67, 206, 162, 0.12);
+	transition: background 0.2s;
+}
+button:hover {
+	background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+}
+#result {
+	margin-top: 2em;
+    text-align: center;
+}
+.result-box {
+    background: #fff3e0;
+    color: #e65100;
+    padding: 1.5em;
+    border-radius: 8px;
+    border-left: 4px solid #ff6f00;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 2em;
+}
+.result-box h2 {
+    margin-top: 0;
+    color: #d84315;
+    font-size: 1.4em;
+}
+.actions {
+    text-align: center;
+    margin-top: 2em;
+}
+.back-button {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.back-button:hover {
+    background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+}
+select {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 1em;
+    border: 1px solid #b2bec3;
+    border-radius: 6px;
+    font-size: 1em;
+    background: #f8fafc;
+    cursor: pointer;
+}
+select:focus {
+    border: 1.5px solid #66a6ff;
+    outline: none;
+	border-radius: 6px;
+	margin-bottom: 1.5em;
+	font-size: 0.98em;
+	text-align: center;
+	box-shadow: 0 1px 4px rgba(21,101,192,0.07);
+}
